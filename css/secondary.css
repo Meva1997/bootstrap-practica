@@ -1,0 +1,108 @@
+body {
+  box-sizing: border-box;
+  width: 100%;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(46, 52, 58);
+}
+
+.logo {
+  width: 200px;
+}
+
+.nav__header {
+  display: flex;
+  justify-content: end;
+  padding: 20px 30px;
+  gap: 20px;
+}
+.nav__header .user {
+  width: 30px;
+}
+.nav__header .user:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.3);
+}
+.nav__header .menu {
+  width: 30px;
+}
+.nav__header .menu:hover {
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1.4);
+}
+
+.nav__main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(26, 30, 34);
+  color: red;
+  padding: 30px;
+  gap: 20px;
+  cursor: pointer;
+}
+
+.content {
+  text-align: justify;
+  background-color: rgb(46, 52, 58);
+  color: white;
+  padding: 30px;
+  width: 100%;
+}
+
+.novedades {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 40px;
+  color: red;
+}
+
+.content__1 {
+  padding-bottom: 50px;
+}
+
+.content__2 {
+  padding-bottom: 50px;
+}
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  background-color: rgb(26, 30, 34);
+  color: red;
+}
+
+.footer__logo {
+  width: 120px;
+}
+
+.nav__footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 40px;
+  gap: 300px;
+}
+.nav__footer:hover {
+  cursor: pointer;
+}
+
+@media (max-width: 1400px) {
+  .nav__footer {
+    box-sizing: border-box;
+    width: 100%;
+    gap: 100px;
+  }
+}
+@media (max-width: 780px) {
+  .nav__footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+}/*# sourceMappingURL=secondary.css.map */

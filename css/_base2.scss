@@ -1,0 +1,51 @@
+$headerColor: rgb(46, 52, 58);
+$navColor: rgb(26, 30, 34);
+$textColor: red;
+$textColor2: white;
+
+@mixin header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@mixin nav__header{
+    display: flex;
+    justify-content: end;
+    padding: 20px 30px;
+    gap: 20px;
+}
+
+@mixin nav__main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 20px;
+    cursor: pointer;
+}
+
+@mixin content{
+    text-align: justify;
+    padding: 30px;
+    width: 100%;
+}
+
+@mixin novedades{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 40px;
+}
+
+@mixin footer{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
+@mixin nav__footer{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 40px;
+    gap: 300px;
+}
