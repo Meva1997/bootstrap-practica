@@ -1,0 +1,95 @@
+body {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+header{
+    @extend header;
+    background-color: $headerColor
+}
+
+.logo {
+    width: 200px;
+}
+
+.nav__header {
+    @extend nav__header; 
+
+    .user{
+        width: 30px;
+    
+        &:hover{
+            cursor: pointer;
+            transition: all .3s ease;
+            transform: scale(1.3);
+        }
+    }
+
+    .menu{
+        width: 30px;
+
+        &:hover{
+            cursor: pointer;
+            transition: all .3s ease;
+            transform: scale(1.4);
+        }
+    }
+}
+
+.nav__main{
+    @extend nav__main;
+    background-color: $navColor;
+    color: $textColor;
+}
+
+.content {
+    @extend content;
+    background-color: $headerColor;
+    color: $textColor2;
+}
+
+.novedades{
+    @extend novedades; 
+    color: $textColor;
+}
+
+.content__1{
+    padding-bottom: 50px;
+}
+
+.content__2{
+    padding-bottom: 50px;
+}
+
+footer {
+    @extend footer;
+    background-color: $navColor;
+    color: $textColor;
+}
+
+.footer__logo{
+    width: 120px;
+}
+
+.nav__footer{
+    @extend nav__footer;
+
+    &:hover{
+        cursor: pointer;
+    }
+}
+
+@media (max-width: 1400px){
+    .nav__footer{
+        box-sizing: border-box;
+        width: 100%;
+        gap: 100px;
+    }
+}
+
+@media (max-width: 780px){
+    .nav__footer{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}
